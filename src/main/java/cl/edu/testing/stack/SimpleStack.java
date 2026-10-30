@@ -25,6 +25,6 @@ public class SimpleStack<T> {
         if (isEmpty()) {
             throw new EmptyStackException();
         }
-        return elements.remove(0);
+        return elements.remove(elements.size() - 1);
     }
 }
